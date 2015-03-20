@@ -122,7 +122,29 @@ Nos podemos atribuir multimpos paramtros em uma rota veja o exemplo
 $app->get('/books/:one/:two', function ($one, $two) {
 });
 
-Os paraemtro são criado identificando pelo : 
+Os parametros são criado identificando pelo `:` 
+
+OUtra alternatica interessante é utilziar paremtros curinga veja o exemplo
+
+$app->get('/hello/:name+', function ($name) {
+    // Do something
+});
+
+O paramtro `$name` vem da seguinte manteira array('Josh', 'T', Lockhart')
+
+Tem uma laternatica interssante que é usar aramtros ocionais nas rotas 
+
+$app->get('/archive(/:year(/:month(/:day)))', function ($year = 2010, $month = 12, $day = 05) {
+    echo sprintf('%s-%s-%s', $year, $month, $day);
+});
+
+Condicçoes em rotas 
+
+
+$app->get('/archive/:year', function ($year) {
+    echo "You are viewing archives from $year";
+})->conditions(array('year' => '(19|20)\d\d'));
+
 
 
 
