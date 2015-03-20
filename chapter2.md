@@ -41,11 +41,61 @@ Crie um arquivo chamado rotas.php
 
 #### GET 
 
-Os método HTTP GET são mapeados atraves da função `get()`, veja:
+Os método HTTP GET são mapeados atraves da função `get()`, vamos criar umaa rota que lista todas as cervejas:
 
-$app->get('/books/:id', function ($id) {
-    //Show book identified by $id
+$app->get('/cervejas', function () {
+
+    echo 
+    
 });
+
+Esse método é utilizado para listas todas as cervejas cadstradas no sistemas.
+
+Observe que o primeiro paramtro da função `get`, `/cervejas` é recurso da URI.
+
+Ao invocar a URI `htto://localhost:8080/cervejas` a função anonima passada no segundo parametro do methodo `get` e chamada e produz um resultado.
+
+Voce pode observar que ao executar esse método o status de retorno doi 200 OK e no corpo do retorno HTTP, esta uma estrutura no formado JSON com todo as cervejas. Em métodos confirmado para retorno dados o corpo do HTTP é utilziad para isso, por exemplo se o retorno fosse quanquer outro formaro o copor seria utilziado para isso.
+
+
+#### POST
+
+Para os metodo HTTP POST utilizamos a finção `post`, veja o exemplo.
+
+$app->post('/cerveja', function () {
+    // Grava uma servija no DB
+});
+
+Aqui temos algo mais espeficico e internssnate, primeiro, estamos recupermdo o corpo do metho HTPP, isso é necessario pois o metodo POST é utilziado para criar recursos, dessa forma utilizamo ele para criar uma nova cevja. Obsere que as informaçõe da serveja devem ser passados no coropo da funcao.
+
+Outro detalhe e que é uma boa pratica de provramalaoi devovloer o status 201 na resposta HTTP para o POST, pois estamos criadno ium recurso.
+
+
+#### PUT 
+
+Metodos do tipo PUT deve ser mapeados com a função `put()`, veja:
+
+$app->put('/cerveja/:id', function ($id) {
+    //Update book identified by $id
+});
+
+Observe que sua estrutura é muito pareceda com o POST, porem como po pUT e utilziado apra atualziar recursos, nos tmos que verificar se o recuso existe no DB caso contraro podemos retoanrdo um erro indcad que o resusto nao esta disponivel.
+
+
+#### DELETE
+
+O meto HTTP DELETE é utilizado para remover, excluir um recriso do DB, isso não significa exclui ele fiziamente, podemos por exemplo apenas flegar ele como excluido, 
+
+$app->delete('/cerveja/:id', function ($id) {
+    
+});
+
+Esse método e muit osemekhatne a GET porem é imporntae destaque que não ha necessidade de retorno de nenhuma informaçõe no coprot da função como o GET por eemplok, nesse caso é uma boa pratica rtorno o status 204 .
+
+
+
+
+
 
 
 
