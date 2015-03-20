@@ -15,7 +15,7 @@ O Slim é um micro framework para utilziado para desenvovler aplicações Web e 
 
 ~~Falar das principais funcionaldiade do Slim~~
 
-### Methos HTTP
+### Methodos HTTP
 
 ~~Falar sobre os métodos HTTP e a estrutura dos métodos~~
 
