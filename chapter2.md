@@ -13,9 +13,13 @@ O PHP possui inumeros micro frameworks, outras lingagens de programação com o 
 
 O Slim é um micro framework para utilziado para desenvovler aplicações Web e API, ao longo desse e-book nos vamos demonstrar todo esse poder e simplicidade, integrando o Slim com outros framework a fim de ter um econssistema que permite desenvover projetos urpreendentes e elegantes.
 
-### Postman
+### Postman - REST Client
+
+Nós vamos escrever nossa primeira API, o Postman - REST Client é uma extenção do Chrome e Firefox que auxiliam o desenvolvimento de testes de API REST.
 
 
+
+E recomendao utilizar essa feramentar pois ao longo do e-book vamos iremos utilzia-la com freuencia para testes 
 
 ### Methos HTTP
 
