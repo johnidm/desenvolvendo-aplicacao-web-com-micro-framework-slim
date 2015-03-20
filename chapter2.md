@@ -1,5 +1,7 @@
 # Slim Framework 
 
+
+
 ~~Falar sobre os métodos HTTP e a estrutura dos métodos~~
 
 ~~Tabela com as convenções adotadas nos métodos HTTP~~
