@@ -5,9 +5,9 @@ Desenvolver aplicações Web é algo entusiasmante, as possibilidades são enorm
 
 Em conversa com meu amigo Cristian da Silva nós tivemos uma ideia de criar um pequeno projeto para acesso a dados da Camara dos Deputados, `http://www2.camara.leg.br/transparencia/dados-abertos`, um projeto muito simples e rápido.
 
-Nós queríamos utilizar uma tecnologia que permitisse isso e que nos desse o prazer de trabalhar com algo que fosse desafiador e novo para nós. Então pensamos em um micro framework PHP que fosse simples e objetivo, iniciamos a pesquisa e encontramos o Slim micro framework, `http://www.slimframework.com/`, e acabamos o escolhendo.
+Nós queríamos utilizar uma tecnologia que permitisse isso e que nos desse o prazer de trabalhar com algo que fosse desafiador e novo para nós. Então pensamos em um micro framework PHP que fosse simples e objetivo, iniciamos a pesquisa e encontramos o Slim, `http://www.slimframework.com/`, e acabamos o escolhendo.
 
-Trabalhar com o Slim é estupendamente simples e emocionante, integramos ele com o Twig, um template engine fantástico e elegante, o resultado você vai conferir ao longo desse e-book.
+Trabalhar com o Slim é estupendamente simples e emocionante, integramos ele com o Twig, um template engine fantástico e elegante, fizemos testes unitaário com o PHPUnit, o resultado você vai conferir ao longo desse e-book.
 
 Boa leitura.
 
