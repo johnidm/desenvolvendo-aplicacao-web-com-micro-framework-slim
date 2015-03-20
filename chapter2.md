@@ -37,9 +37,15 @@ Nesse primeita parte vamos criar um mapa de rotas com o objetivo manipular em fo
 
 Caso uma rota não estevja mapeado o Slim retornar o código 404 - Not Found.
 
+Crie um arquivo chamado rotas.php
+
 #### GET 
 
+Os método HTTP GET são mapeados atraves da função `get()`, veja:
 
+$app->get('/books/:id', function ($id) {
+    //Show book identified by $id
+});
 
 
 
