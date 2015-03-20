@@ -31,7 +31,13 @@ O correto entendimento de Methos HTTP é importante par entender as rotas.
 
 Com o Slim nos podemos fazer um mapeamento de rotas, URI, com funcões que especifica com isso nos temso uma facilidade de criar em consumir recursos HTTP.
 
+### Criando rotas
 
+Nesse primeita parte vamos criar um mapa de rotas com o objetivo manipular em formato JSON cervejas em uma cervejaria. o formato JSON foi escolhido por ser de facill entendiento, mas podemos utilizar outros formatos como XML outr texto puro. Bastando apenas mudar o tipo dados trfegados on cabeçalhos das funções.
+
+Caso uma rota não estevja mapeado o Slim retornar o código 404 - Not Found.
+
+#### GET 
 
 
 
