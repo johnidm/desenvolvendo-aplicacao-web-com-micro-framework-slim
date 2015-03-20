@@ -93,7 +93,36 @@ $app->delete('/cerveja/:id', function ($id) {
 Esse método e muit osemekhatne a GET porem é imporntae destaque que não ha necessidade de retorno de nenhuma informaçõe no coprot da função como o GET por eemplok, nesse caso é uma boa pratica rtorno o status 204 .
 
 
+#### Outos meétodo e rotas
 
+È comum em alguns sistemas o uso do smétos HTTP OPTIONS E PATH, que são utilziado para 
+
+
+Porem nesse caso não iremos aborat o seu uso.
+
+Uma lista completa de methos HTTPO pode ser vita em 
+
+
+#### Outros rescursos 
+
+Vamos exlorar nesse seçlão 
+
+Muitas veze recurso e utilizado por mais de uma rota e possui o mesmo compoetanmente, nesse caso é importaten fazer com que a rota seja respondia em mais de um metho HTTP, para isso podemo utilizar o método `via` 
+
+
+$app->map('/cevejas', function() {
+    
+    // atualiza ou cria uma ceveja
+    
+})->via('PUT', 'POST');
+
+
+Nos podemos atribuir multimpos paramtros em uma rota veja o exemplo
+
+$app->get('/books/:one/:two', function ($one, $two) {
+});
+
+Os paraemtro são criado identificando pelo : 
 
 
 
