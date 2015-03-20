@@ -14,7 +14,20 @@ O PHP possui inumeros micro frameworks, outras lingagens de programação com o 
 O Slim é um micro framework para utilziado para desenvovler aplicações Web e API, ao longo desse e-book nos vamos demonstrar todo esse poder e simplicidade, integrando o Slim com outros framework a fim de ter um econssistema que permite desenvover projetos urpreendentes e elegantes.
 
 
+### Methos HTTP
+
 ### Rotas
+
+Esse provalemente é o rescuros mais interssante do Slim, a construção de rotas, se você esta familiarizado com framework como AngularJS ou Play FRamework, sabe que esse recurso é muito uitil, quando utilizandos framework baseados em actions conseguimos criar um esquema de roteamento bem organizado, veja o exemplo:
+
+ao acessar a URL `htto://localhost/produtos` no browser temos uma rota que esta direciando nossa navegação para o recurso `produtos` vinculado ao method HTTP GET, pelo fato de termos acessado pelo brwoser, que esse recurso `produtos` faz? Isso depende, podemos ter nesse recurso uma API que devove uma resposta ao clente, o broweser, uma lista de produto no formado JSON ou XML, ou em outro caso o terorno de uma página html rednerizad para lista os produtos de uma base de dados pro exemplo.
+
+O que é interssante oberver é que as rotas sçao definidas no nosso istemas para acesar recursos, esse recursos nos deveolver respostas, todos o funcimanteo de rotas no Slim objeced esse fluxo, de requisição e resposta. 
+
+O correto entendimento de Methos HTTP é importante par entender as rotas.
+
+Com o Slim nos podemos fazer um mapeamento de rotas, URI, com funcões que especifica com isso nos temso uma facilidade de criar em consumir recursos HTTP.
+
 
 
 
